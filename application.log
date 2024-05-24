@@ -1,0 +1,26 @@
+2024-05-24T12:57:47.586+02:00  INFO 18268 --- [best_weather] [main] s.n.best_weather.BestWeatherApplication  : Starting BestWeatherApplication using Java 21.0.3 with PID 18268 (G:\Coding\Java\ITHS\001 MagnusNording\05 Web Service REST\best_weather\target\classes started by magnu in G:\Coding\Java\ITHS\001 MagnusNording\05 Web Service REST\best_weather)
+2024-05-24T12:57:47.588+02:00  INFO 18268 --- [best_weather] [main] s.n.best_weather.BestWeatherApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-05-24T12:57:48.303+02:00  INFO 18268 --- [best_weather] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-24T12:57:48.312+02:00  INFO 18268 --- [best_weather] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-24T12:57:48.313+02:00  INFO 18268 --- [best_weather] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-24T12:57:48.366+02:00  INFO 18268 --- [best_weather] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-24T12:57:48.366+02:00  INFO 18268 --- [best_weather] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 756 ms
+2024-05-24T12:57:48.917+02:00  INFO 18268 --- [best_weather] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-24T12:57:48.925+02:00  INFO 18268 --- [best_weather] [main] s.n.best_weather.BestWeatherApplication  : Started BestWeatherApplication in 1.667 seconds (process running for 2.15)
+2024-05-24T12:57:56.521+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-24T12:57:56.521+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-24T12:57:56.522+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-24T12:57:56.546+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.b.clients.smhi.SmhiClient            : Fetching weather data from SMHI API
+2024-05-24T12:57:57.077+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.b.clients.smhi.SmhiClient            : Weather data retrieved successfully from SMHI: {origin='Smhi', temp=22.0, humidity=51.0 % , timestamp='2024-05-25T13:00'}
+2024-05-24T12:57:57.078+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.best_weather.clients.met.MetClient   : Fetching weather data from Met Norway API
+2024-05-24T12:57:57.201+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.best_weather.clients.met.MetClient   : Weather data retrieved successfully from Met Norway: {origin='Met Norway', temp=25.5, humidity=51.0 % , timestamp='2024-05-25T13:00'}
+2024-05-24T12:57:57.201+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.best_weather.clients.met.MetClient   : Fetching weather data from Meteo API
+2024-05-24T12:57:57.342+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.best_weather.clients.met.MetClient   : Weather data retrieved successfully from Meteo: {origin='Meteo', temp=25.0, humidity=52.0 % , timestamp='2024-05-25T12:57:57.341275600'}
+2024-05-24T12:57:57.343+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-1] s.n.b.service.BestWeatherService         : Best weather data retrieved: {origin='Met Norway', temp=25.5, humidity=51.0 % , timestamp='2024-05-25T13:00'}
+2024-05-24T13:02:01.436+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.b.clients.smhi.SmhiClient            : Fetching weather data from SMHI API
+2024-05-24T13:02:01.468+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.b.clients.smhi.SmhiClient            : Weather data retrieved successfully from SMHI: {origin='Smhi', temp=22.0, humidity=51.0 % , timestamp='2024-05-25T13:00'}
+2024-05-24T13:02:01.468+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.best_weather.clients.met.MetClient   : Fetching weather data from Met Norway API
+2024-05-24T13:02:01.518+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.best_weather.clients.met.MetClient   : Weather data retrieved successfully from Met Norway: {origin='Met Norway', temp=25.5, humidity=51.0 % , timestamp='2024-05-25T13:00'}
+2024-05-24T13:02:01.518+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.best_weather.clients.met.MetClient   : Fetching weather data from Meteo API
+2024-05-24T13:02:01.668+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.best_weather.clients.met.MetClient   : Weather data retrieved successfully from Meteo: {origin='Meteo', temp=25.0, humidity=52.0 % , timestamp='2024-05-25T13:02:01.652417200'}
+2024-05-24T13:02:01.668+02:00  INFO 18268 --- [best_weather] [http-nio-8080-exec-4] s.n.b.service.BestWeatherService         : Best weather data retrieved: {origin='Met Norway', temp=25.5, humidity=51.0 % , timestamp='2024-05-25T13:00'}
